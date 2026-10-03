@@ -1,7 +1,11 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#234e49"><title>ENGINEER'S GUILD — 星灯りの設計士</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#234e49"><title>ENGINEER'S GUILD — 星灯りの設計士</title><link rel="stylesheet" href="style.css"><link rel="preload" as="image" href="assets/player-up.svg">
+<link rel="preload" as="image" href="assets/player-down.svg">
+<link rel="preload" as="image" href="assets/player-left.svg">
+<link rel="preload" as="image" href="assets/player-right.svg">
+</head><body>
 <header class="topbar"><a href="#" class="brand" aria-label="ギルドホーム"><span class="brandmark">✧</span><span>ENGINEER'S GUILD<small>星灯りの設計士</small></span></a><nav aria-label="メイン"><button data-view="home" class="nav active">冒険</button><button data-view="skills" class="nav">スキル図鑑</button><button data-view="review" class="nav">復習 <span id="review-count">0</span></button></nav><button id="sound" class="sound" aria-pressed="false">♫ 音 OFF</button><button id="settings" class="iconbutton" aria-label="設定">⚙</button></header>
 <main id="app"></main><footer>焦らず、ひとつずつ。今日の理解が、明日の力になる。<span>65 SKILLS · 13 CHAPTERS</span></footer>
 <dialog id="settings-dialog"><form method="dialog"><button class="close" aria-label="閉じる">×</button></form><h2>冒険の設定</h2><p>進行はこのブラウザに自動保存されます。</p><label class="setting">音量 <input id="volume" type="range" min="0" max="1" step="0.05" value="0.25"></label><div class="settings-actions"><button id="export" class="secondary">セーブをダウンロード</button><label class="secondary upload">セーブを読み込む<input type="file" id="import" accept="application/json,.json" hidden></label><button id="reset" class="danger">進行をリセット</button></div><p id="save-message" role="status"></p></dialog>
 <dialog id="story-dialog" class="story-dialog"><form method="dialog"><button class="close" aria-label="会話を閉じる">×</button></form><div id="story-content"></div></dialog>
 <audio id="bgm" src="assets/guild-theme.wav" loop preload="none" hidden></audio>
-<div id="toast" role="status"></div><script src="curriculum.js"></script><script src="app.js"></script></body></html>
+<div id="toast" role="status"></div><script src="curriculum.js"></script><script src="learning.js"></script><script src="lessons-core.js"></script><script src="lessons-applied.js"></script><script src="exploration.js"></script><script src="app.js"></script></body></html>

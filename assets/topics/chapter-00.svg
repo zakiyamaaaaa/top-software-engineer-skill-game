@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">言語とプログラミング：値・型・実行・エラー</title>
+  <desc id="desc">同じ配列を参照する場合、入力の型を確かめる場合、関数が外側の変数を保持する場合、実行中のコンパイル（JIT）、エラーを上位へ伝える流れを示す図。</desc>
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8de0c5"/></marker>
+    <style>.t{font-family:system-ui,sans-serif;fill:#eff9f4}.s{font-family:system-ui,sans-serif;fill:#b7d7cf;font-size:16px}.box{stroke:#5c8f87;stroke-width:2}.h{font-size:19px;font-weight:700}</style>
+  </defs>
+  <rect width="900" height="520" rx="24" fill="#142f39"/>
+  <text x="42" y="46" class="t" font-size="28" font-weight="700">言語とプログラミング：値・型・実行・エラー</text>
+  <text x="42" y="75" class="s">入力を受けて結果を返すまで、値の意味とデータの寿命を境目ごとに確かめる</text>
+  <rect x="38" y="104" width="256" height="174" rx="16" fill="#1d4850" class="box"/>
+  <text x="58" y="136" class="t h">同じ配列を参照</text>
+  <text x="58" y="165" class="s">a ──┐</text><text x="58" y="193" class="s">b ──┘ → 同じ配列</text>
+  <rect x="82" y="211" width="164" height="42" rx="10" fill="#315f62"/>
+  <text x="103" y="238" class="t">同じ配列が変わる</text>
+  <rect x="322" y="104" width="256" height="174" rx="16" fill="#263d5b" class="box"/>
+  <text x="342" y="136" class="t h">入力を確かめる</text>
+  <text x="342" y="166" class="s">入力文字 → 数値に変換</text>
+  <text x="342" y="195" class="s">形式・範囲を確認</text>
+  <rect x="346" y="211" width="208" height="42" rx="10" fill="#3b6180"/>
+  <text x="376" y="238" class="t">確認済みの値</text>
+  <rect x="606" y="104" width="256" height="174" rx="16" fill="#4b3b5c" class="box"/>
+  <text x="626" y="136" class="t h">関数とデータの寿命</text>
+  <text x="626" y="166" class="s">関数 + 外側の変数</text>
+  <text x="626" y="195" class="s">後で使う関数が保持</text>
+  <rect x="630" y="211" width="208" height="42" rx="10" fill="#6a4d71"/>
+  <text x="681" y="238" class="t">後で実行</text>
+  <path d="M294 190H318" stroke="#8de0c5" stroke-width="3" marker-end="url(#a)"/><path d="M578 190H602" stroke="#8de0c5" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="38" y="321" width="390" height="151" rx="16" fill="#203e49" class="box"/>
+  <text x="58" y="353" class="t h">コードを実行するまで</text>
+  <text x="58" y="386" class="s">ソース → 中間コード → 機械語</text>
+  <path d="M92 426H370" stroke="#8de0c5" stroke-width="3" marker-end="url(#a)"/>
+  <circle cx="92" cy="426" r="8" fill="#e8b878"/><circle cx="231" cy="426" r="8" fill="#e8b878"/><circle cx="370" cy="426" r="8" fill="#e8b878"/>
+  <text x="64" y="456" class="s">よく使う部分を実行中に速くする（JIT）</text>
+  <rect x="464" y="321" width="398" height="151" rx="16" fill="#4a303e" class="box"/>
+  <text x="484" y="353" class="t h">エラーを伝える</text>
+  <text x="484" y="386" class="s" font-size="14">内部処理 → 原因付きエラー → 呼び出し側が対応</text>
+  <path d="M520 426H804" stroke="#ffb18b" stroke-width="3" marker-end="url(#a)"/>
+  <text x="510" y="456" class="s">隠さず、呼び出し側が扱える形で返す</text>
+</svg>
